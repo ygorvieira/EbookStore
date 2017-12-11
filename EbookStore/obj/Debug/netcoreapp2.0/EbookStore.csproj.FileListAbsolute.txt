@@ -1,0 +1,11 @@
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\bin\Debug\netcoreapp2.0\EbookStore.deps.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\bin\Debug\netcoreapp2.0\EbookStore.runtimeconfig.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\bin\Debug\netcoreapp2.0\EbookStore.runtimeconfig.dev.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\bin\Debug\netcoreapp2.0\EbookStore.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\bin\Debug\netcoreapp2.0\EbookStore.pdb
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\obj\Debug\netcoreapp2.0\EbookStore.csprojResolveAssemblyReference.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\obj\Debug\netcoreapp2.0\EbookStore.csproj.CoreCompileInputs.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\obj\Debug\netcoreapp2.0\EbookStore.AssemblyInfoInputs.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\obj\Debug\netcoreapp2.0\EbookStore.AssemblyInfo.cs
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\obj\Debug\netcoreapp2.0\EbookStore.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\ASP_NET_CORE\EbookStore\EbookStore\obj\Debug\netcoreapp2.0\EbookStore.pdb
