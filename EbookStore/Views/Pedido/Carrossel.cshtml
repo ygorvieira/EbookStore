@@ -9,64 +9,26 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-
+           
             <div class="row">
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_1.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Camiseta</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
+                @for (int i = 0; i < 4; i++)
+                {
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="~/images/produtos/large_@(Model[i].Id).jpg" />
+                            </div>
+                            <div class="panel-footer">
+                                <div>@(Model[i].Nome)</div>
+                                <div>R$ @(Model[i].Preco)</div>
+                                <div class="text-center">
+                                    <a asp-action="carrinho">Adicionar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_2.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Camiseta</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_3.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Camiseta</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_4.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Livro REST</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                }
+
             </div>
 
             
@@ -74,62 +36,23 @@
         <div class="item">
 
             <div class="row">
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_2.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Camiseta</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
+                @for (int i = 4; i < 8; i++)
+                {
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="~/images/produtos/large_@(Model[i].Id).jpg" />
+                            </div>
+                            <div class="panel-footer">
+                                <div>@(Model[i].Nome)</div>
+                                <div>R$ @(Model[i].Preco)</div>
+                                <div class="text-center">
+                                    <a asp-action="carrinho">Adicionar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_3.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Camiseta</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_4.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Livro REST</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_5.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Livro Design Patterns com JAVA</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
 
         </div>
@@ -138,62 +61,24 @@
         <div class="item">
         
             <div class="row">
+            @for (int i = 8; i < 9; i++)
+            {
                 <div class="col-md-3">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <img src="~/images/produtos/large_3.jpg" />
+                            <img src="~/images/produtos/large_@(Model[i].Id).jpg" />
                         </div>
                         <div class="panel-footer">
-                            <div>Camiseta</div>
-                            <div>R$ 59,90</div>
+                            <div>@(Model[1].Nome)</div>
+                            <div>R$ @(Model[i].Preco)</div>
                             <div class="text-center">
                                 <a asp-action="carrinho">Adicionar</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_4.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Livro REST</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_5.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Livro Design Patterns com JAVA</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <img src="~/images/produtos/large_6.jpg" />
-                        </div>
-                        <div class="panel-footer">
-                            <div>Livro Spring Framework</div>
-                            <div>R$ 59,90</div>
-                            <div class="text-center">
-                                <a asp-action="carrinho">Adicionar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            }
+
             </div>
             
         </div>
