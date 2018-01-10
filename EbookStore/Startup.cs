@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 
 namespace EbookStore
 {
@@ -22,6 +23,10 @@ namespace EbookStore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            string connectionString = 
+                Configuration.GetSection("ConnectionStrings")
+                    .GetValue<string>("Default");
+            services.AddDbContext<Contexto>(options => options.UseSqlServer(connectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
