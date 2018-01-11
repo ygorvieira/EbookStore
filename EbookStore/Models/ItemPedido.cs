@@ -18,6 +18,11 @@ namespace EbookStore.Models
             }
         }
 
+        public ItemPedido()
+        {
+
+        }
+
         public ItemPedido(int id, Produto produto, int quantidade) : this(produto, quantidade)
         {
             this.Id = id;
