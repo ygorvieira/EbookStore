@@ -56,5 +56,18 @@ namespace EbookStore
                 this._contexto.SaveChanges();
             }
         }
+
+        public void UpdateItemPedido(ItemPedido itemPedido)
+        {
+            var itemPedidoDb =  _contexto.ItensPedido
+                .Where(i => i.Id == itemPedido.Id)
+                .SingleOrDefault();
+
+            if (itemPedidoDb != null)
+            {
+                itemPedidoDb.AtualizaQuantidade(itemPedidoDb.Quantidade);
+                _contexto.SaveChanges();
+            }
+        }
     }
 }

@@ -46,5 +46,11 @@ namespace EbookStore.Controllers
 
             return View(viewModel);
         }
+
+        [HttpPost]
+        public void PostQuantidade([FromBody]ItemPedido input)
+        {
+            _dataService.UpdateItemPedido(input);
+        }
     }
 }
