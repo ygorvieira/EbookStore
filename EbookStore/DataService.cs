@@ -1,4 +1,5 @@
 ﻿using EbookStore.Models;
+using EbookStore.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +58,7 @@ namespace EbookStore
             }
         }
 
-        public void UpdateItemPedido(ItemPedido itemPedido)
+        public UpdateItemPedidoResponse UpdateItemPedido(ItemPedido itemPedido)
         {
             var itemPedidoDb =  _contexto.ItensPedido
                 .Where(i => i.Id == itemPedido.Id)
@@ -68,6 +69,12 @@ namespace EbookStore
                 itemPedidoDb.AtualizaQuantidade(itemPedidoDb.Quantidade);
                 _contexto.SaveChanges();
             }
+
+            var itensPedido = _contexto.ItensPedido.ToList();
+
+            var carrinhoViewModel = new CarrinhoViewModel(itensPedido);
+
+            return new UpdateItemPedidoResponse(itemPedidoDb, carrinhoViewModel);
         }
     }
 }

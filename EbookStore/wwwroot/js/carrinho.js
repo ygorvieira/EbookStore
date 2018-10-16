@@ -17,23 +17,25 @@
      }
 
      getData(elemento) {
-        var linhaDoItem = $(elemento).parents('[item-Id]');
-        var itemId = linhaDoItem.attr('item-Id');
-        var qtde = linhaDoItem.find('input').val();
+         var linhaDoItem = $(btn).parents('[item-id]');
+         var itemId = linhaDoItem.attr('item-id');
+         var novaQtde = linhaDoItem.find('input').val();
 
-        return {
-            Id: itemId,
-            Quantidade: qtde
-        }
+         var data = {
+             Id: itemId,
+             Quantidade: novaQtde
+         };
      }
 
      postQuantidade(data) {
-        $.ajax({
-            url: '/pedido/PostQuantidade',
-            type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify(data)
-        })
+         $.ajax({
+             url: '/pedido/PostQuantidade',
+             type: 'POST',
+             contentType: 'application/json',
+             data: JSON.stringify(data)
+         }).done(function (response) {
+             alert(response.itemPedido.quantidade);
+         });
      }
 }
 

@@ -8,6 +8,6 @@ namespace EbookStore
         void InicializaDb();
         List<Produto> GetProdutos();
         List<ItemPedido> GetItensPedido();
-        void UpdateItemPedido(ItemPedido itemPedido);
+        UpdateItemPedidoResponse UpdateItemPedido(ItemPedido itemPedido);
     }
 }
